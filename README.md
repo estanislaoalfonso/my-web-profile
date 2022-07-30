@@ -1,3 +1,3 @@
 # My Profile App
-Simple profile aplication builded in react.
+Simple profile app builded in react.
 
