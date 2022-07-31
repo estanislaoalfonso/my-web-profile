@@ -35,4 +35,6 @@
 
 .mainContainer ul li a {
     text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
