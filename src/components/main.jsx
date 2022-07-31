@@ -2,6 +2,7 @@ import '../style/main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  {faEnvelope}  from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {Link} from 'react-router-dom';
 
 
 
@@ -21,7 +22,7 @@ const Main = () => {
                 </li>
                 <li>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <a href="https://www.linkedin.com/in/estanislao-alfonso-a6686b107/">estanislao.alf@gmail.com</a>
+                <Link to = "/emailForm">estanislao.alf@gmail.com</Link>
                 </li>
             </ul>
         </div>
