@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route exact path="/home" element = {<Main/>}/>
+          <Route exact path="/" element = {<Main/>}/>
           <Route exact path="/emailForm" element = {<Form/>}/>
       </Routes>
     </BrowserRouter>
