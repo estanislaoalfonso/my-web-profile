@@ -12,6 +12,7 @@ import pdf from '../documents/CV_EstanislaoAlfonso_EN.pdf'
 const Main = () => {
     return (
         <div className='mainContainer'>
+            <h2>Hi there 👋! I'm Estanislao !</h2>
             <img src="https://i.imgur.com/rG2gM0G.jpg" alt="foto principal" />
             <ul>
                 <li>
@@ -28,7 +29,7 @@ const Main = () => {
                 </li>
                 <li>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <Link to = "/emailForm">estanislao.alf@gmail.com</Link>
+                <Link to = "/emailForm">Send me an e-mail</Link>
                 </li>
             </ul>
         </div>
