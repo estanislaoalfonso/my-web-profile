@@ -37,3 +37,7 @@
     margin-left: 10px;
     cursor: pointer;
 }
+
+.mainContainer ul li a:visited {
+    color: rgba(0, 128, 0, 0.802);
+}
