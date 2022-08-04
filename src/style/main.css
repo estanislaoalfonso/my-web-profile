@@ -49,3 +49,9 @@
 .mainContainer ul li a:visited {
     color: rgba(0, 128, 0, 0.802);
 }
+
+@media (max-width: 480px) {
+    .mainContainer h2 {
+        font-size: 1.2em;
+    }
+}
