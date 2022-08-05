@@ -10,3 +10,7 @@ body{
     flex-direction: column;
     align-content: center;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
