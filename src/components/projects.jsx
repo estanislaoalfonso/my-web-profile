@@ -1,15 +1,19 @@
-import '../style/projects.css'
+import '../style/projects.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
 
 
 
     return (
+    <>
+        <h1 className = 'projectTitle'>
+            MY PERSONAL PROYECTS    
+        </h1>
+        
         <div className="projectsContainer">
-
-            <h1>
-                Projects    
-            </h1>
 
             <div className="projectCard">
                 <div className='imageContainerECommerce'>
@@ -30,8 +34,12 @@ const Projects = () => {
                 <a href="https://estanislaoalfonso.github.io/MalvonCoffeeRoasters/" target='_blank' rel='noreferrer'> Go to the website</a>
                 </div>
             </div>
-
         </div>
+        
+        <Link to='/' className='homeLinkProject'>
+            <FontAwesomeIcon icon={faHouse}/>
+        </Link>
+    </>
 )
 }
 
