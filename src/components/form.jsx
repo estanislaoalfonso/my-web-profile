@@ -19,6 +19,8 @@ const Form = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         setFlag(true);
+        
+        //Setting email validations
         // eslint-disable-next-line
         const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 

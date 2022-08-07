@@ -1,6 +1,6 @@
 import '../style/main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import  {faEnvelope}  from '@fortawesome/free-solid-svg-icons';
+import  {faEnvelope, faLaptopFile}  from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
@@ -28,8 +28,12 @@ const Main = () => {
                     <a href={pdf} target="_blank" rel='noreferrer'>My CV</a>
                 </li>
                 <li>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <Link to = "/emailForm">Send me an e-mail</Link>
+                    <FontAwesomeIcon icon={faLaptopFile}/>
+                    <Link to="/projects"> My projects</Link>
+                </li>
+                <li>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <Link to = "/emailForm">Send me an e-mail</Link>
                 </li>
             </ul>
         </div>
