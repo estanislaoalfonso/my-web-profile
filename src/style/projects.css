@@ -33,6 +33,7 @@
     align-content: center;
     border-radius: 10px;
     overflow: hidden;
+    max-width: 45em;
 }
 
 .imageContainerECommerce {
@@ -121,5 +122,11 @@
 
     .cardDescription a {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 740px) {
+    .imageContainerECommerce, .imageContainerCoffee {
+        background-position: center;
     }
 }

@@ -21,11 +21,19 @@
     margin-bottom: 10px;
 }
 
+.mainContainer p {
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 0.7px;
+    font-size: 1em;
+}
+
 .mainContainer img {
     width: 250px;
     border-radius: 100%;
     border: 2px solid white;
     margin-bottom: 2em;
+    margin-top: 0.9em;
 }
 
 .mainContainer ul li {

@@ -10,7 +10,7 @@ const Projects = () => {
     return (
     <>
         <h1 className = 'projectTitle'>
-            MY PERSONAL PROYECTS    
+            MY PERSONAL PROJECTS    
         </h1>
         
         <div className="projectsContainer">

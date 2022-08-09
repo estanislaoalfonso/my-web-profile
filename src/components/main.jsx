@@ -13,6 +13,9 @@ const Main = () => {
     return (
         <div className='mainContainer'>
             <h2>Hi there 👋! I'm Estanislao !</h2>
+            <p>I'm a Front End developer👨‍💻.</p>
+            <p>Plase feel free to learn more about me here on my Profile web!</p>
+            <p></p>
             <img src="https://i.imgur.com/k2q4AFi.jpg" alt="foto principal" />
             <ul>
                 <li>
