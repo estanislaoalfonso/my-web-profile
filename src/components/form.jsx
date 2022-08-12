@@ -1,10 +1,14 @@
+//REACT
+import React, { useRef, useState } from 'react';
+import {Link, useNavigate} from 'react-router-dom';
+//CSS
 import "../style/form.css";
+// EMAIL and other stuffs
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import {Link, useNavigate} from 'react-router-dom';
-import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import Loader from './loader';
+import swal from 'sweetalert';
 
 const Form = () => {
 
@@ -26,21 +30,50 @@ const Form = () => {
 
         //Validaciones de formulario
         if (nameValue.current.value.length < 3) {
-            alert ('Invalid name. Please type a valid name.');
+            swal({
+                title: "Invalid name",
+                text: "Please type a valid name.",
+                icon: "error",
+                button: "Ok!",
+              })
+            setFlag(false)
         } else if (!emailRegex.test(emailValue.current.value)) {
-            alert ('Invalid email. Please type a valid email.')
+            swal({
+                title: "Invalid e-mail!",
+                text: "Please type a valid email.",
+                icon: "error",
+                button: "Ok!",
+              })
+            setFlag(false)
         } else if (textAreaValue.current.value.length < 1) {
-            alert ('Please type something on the text area before send')
+            swal({
+                title: "Text area is empty!",
+                text: "Please type something on the text area before send.",
+                icon: "error",
+                button: "Ok!",
+              })
+            setFlag(false)
+            
         } 
         // Si las validaciones se cumplen, se envía el formulario
         else {
                 emailjs.sendForm("service_ra50zye", "contact_form", form.current, "Sp7pvEG-Z1c5mUt8z")
             .then (
                 result => {
-                    alert ('Thank you! =). Your e-mail has been sent. I will give you my feedback as soon as possible !.');
+                    swal({
+                        title: "Great!",
+                        text: "Your e-mail has been sent. I will give you my feedback as soon as possible!",
+                        icon: "success",
+                        button: "Thank you!",
+                      })
                 },
             error => {
-                alert (`Something went wrong, please try to contact me again.`)
+                swal({
+                    title: "Uuuups!",
+                    text: "Something went wrong, please try again.",
+                    icon: "error",
+                    button: "Ok!",
+                  })
             }
             )
             .then (
