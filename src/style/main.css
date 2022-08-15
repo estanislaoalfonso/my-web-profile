@@ -33,7 +33,7 @@
     border-radius: 100%;
     border: 2px solid white;
     margin-bottom: 2em;
-    margin-top: 0.9em;
+    margin-top: 1em;
 }
 
 .mainContainer ul li {
@@ -47,6 +47,13 @@
     border-radius: 5px;
     text-align: center;
     list-style: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.mainContainer ul li:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
 
 .mainContainer ul li a {
@@ -56,7 +63,7 @@
 }
 
 .mainContainer ul li a:visited {
-    color: rgba(0, 128, 0, 0.802);
+    color: black;
 }
 
 @media (max-width: 480px) {
